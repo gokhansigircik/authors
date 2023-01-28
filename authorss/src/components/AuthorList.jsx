@@ -46,21 +46,21 @@ function AuthorList({ authors, setLoaded }) {
                 </label>
               </div>
               <div className="d-flex justify-content-end">
-              <div>
-                <Link
-                  to={`/authors/${author._id}/edit`}
-                  className="btn btn-warning me-2"
+                <div>
+                  <Link
+                    to={`/authors/${author._id}/edit`}
+                    className="btn btn-warning me-2"
+                  >
+                    Edit
+                  </Link>
+                </div>
+                <button
+                  className="btn btn-danger"
+                  onClick={() => handleDelete(author._id)}
                 >
-                  Edit
-                </Link>
+                  Delete
+                </button>
               </div>
-              <button
-                className="btn btn-danger"
-                onClick={() => handleDelete(author._id)}
-              >
-                Delete
-              </button>
-            </div>
             </div>
           </div>
         </div>
