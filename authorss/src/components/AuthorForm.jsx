@@ -28,7 +28,7 @@ function AuthorForm({ setLoaded }) {
       })
       .catch((err) => {
         console.log(err);
-        // if u dont now what to put you can chain it like it and dont break your code
+        // if u dont now what to put you can chain it like it and dont break yourcode
         setErrors(err?.response?.data?.errors);
       });
   };
