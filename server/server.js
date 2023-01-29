@@ -10,7 +10,7 @@ app.use(cors(), express.json());
 const connectDb = require('./config/mongoose.config');
 connectDb();
 
-// require("./server/routes/person.routes")(app); -- platform
+// require("./server/routes/person.routes")(app); -- platform way
 const authorRouter = require('./routes/author.routes');
 app.use('/api', authorRouter);
 
